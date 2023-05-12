@@ -1,6 +1,7 @@
-// http://www.usaco.org/index.php?page=viewproblem2&cpid=526
 /* USACO 2015 February Contest, Bronze
 Problem 1. Censoring (Bronze) */
+// Link problem: http://www.usaco.org/index.php?page=viewproblem2&cpid=526
+// Video solution: https://www.youtube.com/watch?v=ag46IZcJRQk
 
 #include <iostream> 
 #include <vector>
