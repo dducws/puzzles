@@ -1,4 +1,7 @@
 // http://www.usaco.org/index.php?page=viewproblem2&cpid=526
+/* USACO 2015 February Contest, Bronze
+Problem 1. Censoring (Bronze) */
+
 #include <iostream> 
 #include <vector>
 
