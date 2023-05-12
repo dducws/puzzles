@@ -56,7 +56,6 @@ void solve()
         int lower_endpoints, upper_endpoints; 
         std::cin >> sensor_type >> lower_endpoints >> upper_endpoints;
 
-
         if (after_last_mile.first != 0 and after_last_mile.second != 0)
         {
             if (sensor_type == "on")
