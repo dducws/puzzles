@@ -13,7 +13,7 @@ using ll = long long;
 #define all(x) begin(x), end(x)
 #define sz(x) (int) (x).size()
 
-// An useful template to help debugging by printing out the values of a pair.
+// An useful template for debugging by printing out the values of a pair.
 template <typename T1, typename T2>
 std::ostream& operator<<(std::ostream& out, const std::pair<T1, T2>& pair) {
     return out << pair.first << ' ' << pair.second << '\n';
@@ -90,8 +90,8 @@ void solve()
         traffic_records[i].second.second = upper_endpoints;
     }
 
-    /* After we find out the value of the range most specific possible for the rate of traffic flow after the last mile,
-    we move backwards to find of that of before the first mile. */
+    /* After we find out the value of the range most specific possible for the rate of 
+    traffic flow after the last mile, we move backwards to find of that of before the first mile. */
 
     before_first_mile = after_last_mile;
 
