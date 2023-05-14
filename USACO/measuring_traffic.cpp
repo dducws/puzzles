@@ -33,7 +33,6 @@ void solve()
 {
     int N;
     std::cin >> N;
-
     std::vector<std::pair<std::string, std::pair <int, int>>> traffic_records (N); 
     std::pair<int, int> before_first_mile {};
     std::pair<int, int> after_last_mile {};
@@ -47,7 +46,6 @@ void solve()
     */
 
     /* Warning: The lower bound range of the traffic flow in anytime can't be a negative value. */
-
     for (int i {}; i < N; ++i)
     {
         std::string sensor_type; 
@@ -79,7 +77,6 @@ void solve()
                 after_last_mile.first = lower_endpoints;
                 after_last_mile.second = upper_endpoints;
             }
-
         }
 
         traffic_records[i].first = sensor_type; 
@@ -109,7 +106,6 @@ void solve()
             before_first_mile.second = std::min(before_first_mile.second, traffic_records[j].second.second);
         }
     }
-    
     std::cout << before_first_mile << after_last_mile;
 }
 
