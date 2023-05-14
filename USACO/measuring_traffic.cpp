@@ -31,14 +31,12 @@ void setIO(std::string name = "")
 
 void solve()
 {
-    std::pair<int, int> before_first_mile {};
-
-    std::pair<int, int> after_last_mile {};
-
     int N;
     std::cin >> N;
 
     std::vector<std::pair<std::string, std::pair <int, int>>> traffic_records (N); 
+    std::pair<int, int> before_first_mile {};
+    std::pair<int, int> after_last_mile {};
 
     /* 
     To find the range of possible final flows of traffic.
@@ -91,7 +89,6 @@ void solve()
 
     /* After we find out the value of the range most specific possible for the rate of 
     traffic flow after the last mile, we move backwards to find of that of before the first mile. */
-
     before_first_mile = after_last_mile;
 
     for (int j {N - 1}; j >= 0; --j)
@@ -112,7 +109,7 @@ void solve()
             before_first_mile.second = std::min(before_first_mile.second, traffic_records[j].second.second);
         }
     }
-
+    
     std::cout << before_first_mile << after_last_mile;
 }
 
