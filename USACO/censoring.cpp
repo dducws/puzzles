@@ -3,42 +3,36 @@ Problem 1. Censoring (Bronze) */
 // Link problem: http://www.usaco.org/index.php?page=viewproblem2&cpid=526
 // Video solution: https://www.youtube.com/watch?v=ag46IZcJRQk
 
-#include <iostream> 
+#include <iostream>
 #include <vector>
 
-using ll = long long;
-
 #define all(x) begin(x), end(x)
-#define sz(x) (int) (x).size()
 
-void setIO(std::string name = "")
-{
-    std::cin.tie(0)->sync_with_stdio(0); // see /general/fast-io
-    if (sz(name))
-    { 
-        freopen((name + ".in").c_str(), "r", stdin); // see /general/input-output
+void setIO(std::string name = "") {
+    std::cin.tie(nullptr)->sync_with_stdio(false);
+    if (!name.empty())
+    {
+        freopen((name + ".in").c_str(), "r", stdin);
         freopen((name + ".out").c_str(), "w", stdout);
     }
 }
 
-void solve()
+void solve() 
 {
-    std::string s, t; 
+    std::string s, t;
     std::cin >> s >> t;
-    std::string answer {};
-    for (const auto c : s)
+    std::string answer;
+    for (const auto c : s) 
     {
-        answer += c;
-        /* If the censored string is longer than 't' string and the last t characters of the censored string
-        are equal to t string, remove the last t characters from the censored string. */
+        answer.push_back(c);
         if (answer.size() > t.size() && answer.substr(answer.size() - t.size()) == t)
             answer.resize(answer.size() - t.size());
     }
     std::cout << answer << '\n';
 }
 
-int main()
+int main() 
 {
-    setIO("censor"); 
-    solve();
+    setIO("censor");
+    solve();    
 }
