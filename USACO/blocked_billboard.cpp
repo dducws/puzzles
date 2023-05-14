@@ -6,6 +6,16 @@ Problem 1. Blocked Billboard */
 #include <iostream> 
 #include <vector>
 
+void setIO(std::string name = "")
+{
+    std::cin.tie(0)->sync_with_stdio(0);
+    if (!name.empty())
+    {
+        freopen((name + ".in").c_str(), "r", stdin);
+        freopen((name + ".out").c_str(), "w", stdout);
+    }
+}
+
 struct Rectangular
 {
     int x1, y1, x2, y2; 
@@ -20,16 +30,6 @@ struct Rectangular
         return dx * dy;
     }
 };
-
-void setIO(std::string name = "")
-{
-    std::cin.tie(0)->sync_with_stdio(0);
-    if (!name.empty())
-    {
-        freopen((name + ".in").c_str(), "r", stdin);
-        freopen((name + ".out").c_str(), "w", stdout);
-    }
-}
 
 void solve()
 {
