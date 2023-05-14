@@ -5,10 +5,6 @@ Problem 2. The Bovine Shuffle */
 
 #include <iostream> 
 #include <vector>
-#include <utility>
-#include <algorithm>
-
-using ll = long long;
 
 #define all(x) begin(x), end(x)
 #define sz(x) (int) (x).size()
