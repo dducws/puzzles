@@ -1,7 +1,7 @@
 /* USACO 2017 December Contest, Bronze
 Problem 1. Blocked Billboard */
-// Link problem: http://www.usaco.org/index.php?page=viewproblem2&cpid=759
-// Modified code: chatGPT
+// Problem: http://www.usaco.org/index.php?page=viewproblem2&cpid=759
+// Edited by: chatGPT
 
 #include <iostream> 
 #include <vector>
