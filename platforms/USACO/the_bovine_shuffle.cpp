@@ -1,7 +1,7 @@
 /* USACO 2017 December Contest, Bronze
 Problem 2. The Bovine Shuffle */
-// Link problem: http://www.usaco.org/index.php?page=viewproblem2&cpid=760
-// Implementation (Solution): https://usaco.guide/problems/usaco-760-the-bovine-shuffle/solution
+// Problem: http://www.usaco.org/index.php?page=viewproblem2&cpid=760
+// Solution: https://usaco.guide/problems/usaco-760-the-bovine-shuffle/solution
 
 #include <iostream> 
 #include <vector>
