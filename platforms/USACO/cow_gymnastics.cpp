@@ -1,6 +1,6 @@
 /* USACO 2019 December Contest, Bronze
 Problem 1. Cow Gymnastics */
-// Link problem: http://www.usaco.org/index.php?page=viewproblem2&cpid=963
+// Problem: http://www.usaco.org/index.php?page=viewproblem2&cpid=963
 
 #include <iostream> 
 #include <vector>
