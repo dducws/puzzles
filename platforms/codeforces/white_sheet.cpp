@@ -1,5 +1,5 @@
 // Codeforces Round 587 (Div. 3)
-// Link problem: https://codeforces.com/contest/1216/problem/C
+// Problem: https://codeforces.com/contest/1216/problem/C
 // Reference: https://codeforces.com/contest/1216/submission/154819087 
 
 #include <iostream> 
