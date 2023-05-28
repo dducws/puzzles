@@ -1,7 +1,7 @@
 /* USACO 2017 US Open Contest, Silver
 Problem 2. Bovine Genomics */
-// Link problem: https://www.usaco.org/index.php?page=viewproblem2&cpid=739
-// Tutorial (Video Solution): https://usaco.guide/problems/usaco-739-bovine-genomics/solution
+// Problem: https://www.usaco.org/index.php?page=viewproblem2&cpid=739
+// Tutorial: https://usaco.guide/problems/usaco-739-bovine-genomics/solution
 
 #include <iostream> 
 #include <vector>
