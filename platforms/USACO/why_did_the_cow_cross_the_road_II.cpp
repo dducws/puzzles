@@ -1,7 +1,7 @@
 /* USACO 2017 February Contest, Bronze
 Problem 2. Why Did the Cow Cross the Road II */
-// Link problem: http://www.usaco.org/index.php?page=viewproblem2&cpid=712
-// Edited implementation based on solution 2: https://usaco.guide/problems/usaco-712-why-did-the-cow-cross-the-road-ii/solution
+// Problem: http://www.usaco.org/index.php?page=viewproblem2&cpid=712
+// Solution 2: https://usaco.guide/problems/usaco-712-why-did-the-cow-cross-the-road-ii/solution
 
 #include <iostream> 
 #include <vector>
