@@ -1,6 +1,6 @@
 /* USACO 2018 January Contest, Bronze
 Problem 1. Blocked Billboard II */
-// Link problem: https://www.usaco.org/index.php?page=viewproblem2&cpid=783
+// Problem: https://www.usaco.org/index.php?page=viewproblem2&cpid=783
 // Tutorial: https://usaco.guide/problems/usaco-783-blocked-billboard-ii/solution
 
 #include <iostream> 
