@@ -86,6 +86,7 @@ void solve()
             ++i;
         }
     }
+    
     std::cout << M << '\n';
 }
 
