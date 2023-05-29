@@ -90,7 +90,8 @@ int main()
     solve();
 }
 
-// A solution with better readability from USACO ()
+// A solution with better readability from USACO 
+
 /*
 #include <iostream> 
 #include <vector>
