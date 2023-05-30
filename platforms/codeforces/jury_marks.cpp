@@ -48,7 +48,7 @@ void solve()
         for (int i {}; i < k; ++i)
             prefix_points.insert(starting_point + A[i]);
         
-        for (const auto& remembered_point : B)
+        for (const auto remembered_point : B)
         {
             if (prefix_points.find(remembered_point) == prefix_points.end())
             {
