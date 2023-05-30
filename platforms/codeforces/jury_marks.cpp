@@ -1,3 +1,8 @@
+// Codeforces Round 424 (Div. 2, rated, based on VK Cup Finals)
+// Problem: https://codeforces.com/contest/831/problem/C
+// Edited: chatGPT
+
+
 #include <iostream> 
 #include <vector> 
 #include <unordered_set>
