@@ -1,3 +1,10 @@
+/* USACO 2016 December Contest, Silver
+Problem 2. Cities and States */
+// Problem: http://www.usaco.org/index.php?page=viewproblem2&cpid=667
+// Solution (first): https://usaco.guide/problems/usaco-667-cities--states/solution
+// Edited: chatGPT
+
+
 #include <iostream> 
 #include <unordered_map>
 #include <vector>
