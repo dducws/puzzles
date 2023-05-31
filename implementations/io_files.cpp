@@ -8,10 +8,10 @@ using ll = long long;
 
 void setIO(std::string name = "")
 {
-    std::cin.tie(0)->sync_with_stdio(0); // see /general/fast-io
+    std::cin.tie(0)->sync_with_stdio(0);
     if (sz(name))
     { 
-        freopen((name + ".in").c_str(), "r", stdin); // see /general/input-output
+        freopen((name + ".in").c_str(), "r", stdin);
         freopen((name + ".out").c_str(), "w", stdout);
     }
 }
