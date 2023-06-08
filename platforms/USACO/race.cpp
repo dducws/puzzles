@@ -23,22 +23,22 @@ void solve()
     {
         int X;
         std::cin >> X;
-        int timeUsed {}, speeding_up_distance {}, slowing_down_distance {};
+        int timeUsed {}, speeding_up_distances {}, slowing_down_distances {};
 
         for (int current_speed {1};; current_speed++)
         {
-            speeding_up_distance += current_speed;
+            speeding_up_distances += current_speed;
             timeUsed++;
 
-            if (speeding_up_distance + slowing_down_distance >= K)
+            if (speeding_up_distances + slowing_down_distances >= K)
                 break;
             
             if (current_speed >= X)
             {
-                slowing_down_distance += current_speed;
+                slowing_down_distances += current_speed;
                 timeUsed++;
 
-                if (speeding_up_distance + slowing_down_distance >= K)
+                if (speeding_up_distances + slowing_down_distances >= K)
                     break;
             }
         }
