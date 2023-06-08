@@ -25,7 +25,7 @@ void solve()
     for (const auto c : s) 
     {
         answer.push_back(c);
-        if (answer.size() > t.size() && answer.substr(answer.size() - t.size()) == t)
+        if (answer.size() >= t.size() && answer.substr(answer.size() - t.size()) == t)
             answer.resize(answer.size() - t.size());
     }
     std::cout << answer << '\n';
