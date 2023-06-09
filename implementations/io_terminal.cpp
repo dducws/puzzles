@@ -1,5 +1,10 @@
 #include <iostream> 
-#include <vector> 
+#include <vector>
+
+using ll = long long;
+
+#define all(x) begin(x), end(x)
+#define sz(x) (int) (x).size()
 
 void solve()
 {
