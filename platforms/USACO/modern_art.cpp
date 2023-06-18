@@ -4,6 +4,7 @@ Problem 3. Modern Art */
 // Solution: http://www.usaco.org/current/data/sol_art_bronze_open17.html
 // Edited: chatGPT
 
+
 #include <iostream> 
 #include <vector>
 #include <set> 

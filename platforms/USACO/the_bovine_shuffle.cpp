@@ -3,6 +3,7 @@ Problem 2. The Bovine Shuffle */
 // Problem: http://www.usaco.org/index.php?page=viewproblem2&cpid=760
 // Solution: https://usaco.guide/problems/usaco-760-the-bovine-shuffle/solution
 
+
 #include <iostream> 
 #include <vector>
 
@@ -11,10 +12,10 @@ Problem 2. The Bovine Shuffle */
 
 void setIO(std::string name = "")
 {
-    std::cin.tie(0)->sync_with_stdio(0); // see /general/fast-io
+    std::cin.tie(0)->sync_with_stdio(0);
     if (sz(name))
     { 
-        freopen((name + ".in").c_str(), "r", stdin); // see /general/input-output
+        freopen((name + ".in").c_str(), "r", stdin); 
         freopen((name + ".out").c_str(), "w", stdout);
     }
 }

@@ -3,6 +3,7 @@ Problem 3. Mowing the Field */
 // Problem: http://www.usaco.org/index.php?page=viewproblem2&cpid=593
 // Edited: chatGPT
 
+
 #include <iostream> 
 #include <vector>
 #include <map>

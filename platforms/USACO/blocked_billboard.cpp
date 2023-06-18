@@ -3,6 +3,7 @@ Problem 1. Blocked Billboard */
 // Problem: http://www.usaco.org/index.php?page=viewproblem2&cpid=759
 // Edited by: chatGPT
 
+
 #include <iostream> 
 #include <vector>
 

@@ -3,6 +3,7 @@ Problem 3. Measuring Traffic */
 // Problem: http://www.usaco.org/index.php?page=viewproblem2&cpid=917
 // Explanation: https://www.youtube.com/watch?v=RZBnIYC3GTw
 
+
 #include <iostream> 
 #include <vector>
 #include <algorithm>

@@ -3,6 +3,7 @@ Problem 3. Cow Tipping */
 // Problem: http://www.usaco.org/index.php?page=viewproblem2&cpid=689
 // Explanation: https://www.youtube.com/watch?v=RoOaXLTFS3E
 
+
 #include <iostream> 
 #include <vector>
 

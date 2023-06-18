@@ -2,6 +2,7 @@
 // Problem: https://codeforces.com/contest/1808/problem/B
 // Solution: https://usaco.guide/problems/cf-playing-in-a-casino/solution
 
+
 #include <iostream> 
 #include <vector> 
 #include <algorithm>

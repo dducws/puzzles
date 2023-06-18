@@ -3,6 +3,7 @@ Problem 2. Bovine Genomics */
 // Problem: http://www.usaco.org/index.php?page=viewproblem2&cpid=736
 // Edited by: chatGPT
 
+
 #include <iostream>
 #include <vector> 
 #include <set> 

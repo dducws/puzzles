@@ -5,6 +5,7 @@ Problem 3. Livestock Lineup */
 // Graphs approach solution: https://usaco.guide/bronze/intro-graphs?lang=cpp
 // Edited: chatGPT
 
+
 #include <iostream> 
 #include <vector>
 #include <map> 

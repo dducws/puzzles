@@ -5,6 +5,7 @@ Problem 3. Guess the Animal */
 
 /* The key point for this problem is that for each question, only two animals are compared, not all the animals. */
 
+
 #include <iostream> 
 #include <vector>
 #include <algorithm>

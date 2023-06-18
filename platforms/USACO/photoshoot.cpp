@@ -3,6 +3,7 @@ Problem 1. Photoshoot */
 // Problem: http://usaco.org/index.php?page=viewproblem2&cpid=1227
 // Explanation: https://youtu.be/CMdPvI82D6A?t=72
 
+
 #include <iostream> 
 
 void solve()

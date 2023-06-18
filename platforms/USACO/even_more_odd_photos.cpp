@@ -2,6 +2,7 @@
 Problem 2. Even More Odd Photos */
 // Problem: http://www.usaco.org/index.php?page=viewproblem2&cpid=1084
 
+
 #include <iostream> 
 
 void solve()

@@ -3,6 +3,7 @@ Problem 1. Censoring (Bronze) */
 // Problem: http://www.usaco.org/index.php?page=viewproblem2&cpid=526
 // Explanation: https://www.youtube.com/watch?v=ag46IZcJRQk
 
+
 #include <iostream>
 #include <vector>
 

@@ -2,6 +2,7 @@
 Problem 1. Cow Gymnastics */
 // Problem: http://www.usaco.org/index.php?page=viewproblem2&cpid=963
 
+
 #include <iostream> 
 #include <vector>
 #include <map>

@@ -2,6 +2,7 @@
 // Problem: https://codeforces.com/contest/1216/problem/C
 // Reference: https://codeforces.com/contest/1216/submission/154819087 
 
+
 #include <iostream> 
 
 bool solve()

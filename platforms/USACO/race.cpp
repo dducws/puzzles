@@ -3,6 +3,7 @@ Problem 3. Race */
 // Problem: http://www.usaco.org/index.php?page=viewproblem2&cpid=989
 // Solution: http://www.usaco.org/current/data/sol_race_bronze_jan20.html
 
+
 #include <iostream>
 
 void setIO(std::string name = "") {
