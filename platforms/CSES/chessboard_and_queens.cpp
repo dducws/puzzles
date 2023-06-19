@@ -9,10 +9,10 @@
 const int n {8};
 int count {};
 std::array<std::array<char, n>, n> chessboard; 
-std::array<int, 2 * n - 1> diagonal1, diagonal2;
+std::array<bool, 2 * n - 1> diagonal1, diagonal2;
 /* Reminder: Don't initialize a separate array to keep track the number of queens in each row.
 Made this mistake for the first time at 22:15 on Jun 19, 23 */
-std::array<int, n> rows; 
+std::array<bool, n> rows; 
 
 void search(int x)
 {
@@ -31,7 +31,7 @@ void search(int x)
         // Place a queen in the current cell
         chessboard[x][y] = 'Q';
         // Mark the row and diagonals as occupied
-        rows[y] = diagonal1[x + y] = diagonal2[x - y + n - 1] = 1; 
+        rows[y] = diagonal1[x + y] = diagonal2[x - y + n - 1] = true; 
         
         // Recursive call to search for a valid placement in the next column (x + 1)
         search(x + 1);
@@ -39,7 +39,7 @@ void search(int x)
         // Backtrack: Remove the queen from the current cell
         chessboard[x][y] = '.';
         // Mark the row and diagonals as available again
-        rows[y] = diagonal1[x + y] = diagonal2[x - y + n - 1] = 0; 
+        rows[y] = diagonal1[x + y] = diagonal2[x - y + n - 1] = false; 
     }
 }
 
