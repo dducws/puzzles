@@ -17,8 +17,7 @@ void solve()
 {
     std::string s;
     std::cin >> s; 
-    /* Sort the string in lexicographical order using std::sort.
-    This works for sorting all characters in a string. */
+    // std::sort works for sorting all characters in a string in lexicographical order.
     std::sort(all(s));
     std::vector<std::string> permutations; 
 
