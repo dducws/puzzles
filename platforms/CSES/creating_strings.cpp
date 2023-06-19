@@ -2,6 +2,9 @@
 // Problem: https://cses.fi/problemset/task/1622
 // Solution: https://usaco.guide/bronze/complete-rec?lang=cpp#generating-permutations-using-next_permutation
 
+/* One small detail is that you need to sort the string before calling next_permutation() 
+because the method generates strings in lexicographical order. If the string isn't sorted,
+then strings which are lexicographically smaller than the initial string won't be generated. */
 
 #include <iostream> 
 #include <vector>
