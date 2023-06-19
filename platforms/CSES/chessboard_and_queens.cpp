@@ -12,7 +12,7 @@ std::array<std::array<char, n>, n> chessboard;
 std::array<bool, 2 * n - 1> diagonal1, diagonal2;
 /* Reminder: Don't initialize a separate array to keep track the number of queens in each row.
 Made this mistake for the first time at 22:15 on Jun 19, 23 */
-std::array<bool, n> rows; 
+std::array<bool, n> rows_taken; 
 
 void search(int x)
 {
@@ -25,13 +25,13 @@ void search(int x)
     for (int y {}; y < n; ++y)
     {
         // Check if the current cell is reserved or conflicts with existing queens
-        if (chessboard[x][y] == '*' || rows[y] || diagonal1[x + y] || diagonal2[x - y + n - 1])
+        if (chessboard[x][y] == '*' || rows_taken[y] || diagonal1[x + y] || diagonal2[x - y + n - 1])
             continue;  // Skip this cell and move to the next one
         
         // Place a queen in the current cell
         chessboard[x][y] = 'Q';
         // Mark the row and diagonals as occupied
-        rows[y] = diagonal1[x + y] = diagonal2[x - y + n - 1] = true; 
+        rows_taken[y] = diagonal1[x + y] = diagonal2[x - y + n - 1] = true; 
         
         // Recursive call to search for a valid placement in the next column (x + 1)
         search(x + 1);
@@ -39,7 +39,7 @@ void search(int x)
         // Backtrack: Remove the queen from the current cell
         chessboard[x][y] = '.';
         // Mark the row and diagonals as available again
-        rows[y] = diagonal1[x + y] = diagonal2[x - y + n - 1] = false; 
+        rows_taken[y] = diagonal1[x + y] = diagonal2[x - y + n - 1] = false; 
     }
 }
 
