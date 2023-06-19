@@ -1,3 +1,8 @@
+// Chessboard and Queens - CSES Problem Set 
+// Problem: https://cses.fi/problemset/task/1624
+// Edited + solution: chatGPT
+
+
 #include <iostream> 
 #include <array> 
 
