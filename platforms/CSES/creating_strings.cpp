@@ -6,13 +6,13 @@
 because the method generates strings in lexicographical order. If the string isn't sorted,
 then strings which are lexicographically smaller than the initial string won't be generated. */
 
+
 #include <iostream> 
 #include <vector>
 #include <algorithm>
 
 #define all(x) begin(x), end(x)
 #define sz(x) (int) (x).size()
-
 
 void solve()
 {
