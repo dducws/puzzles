@@ -6,6 +6,8 @@
 Once the function arrives at the Solution step, the array has already been broken down to its smallest possible version. It then solves the smallest problem and works its way up solving and handling the rest of the array.
 
 
+
+
 ## Resources 
 - Thinking Like a Programmer: An Introduction to Creative Problem Solving [(Chapter 6)][1]
 - Recursion (Think Like a Programmer) [(Youtube)][2]
