@@ -1,5 +1,12 @@
 
 
+Recursion can actually be broken down into three steps:
+1. The base step (stops recursion)
+2. The Minimization step (creates the smallest possible instance of a problem. Example: 500 element array turned into 1 or 2 element array)
+3. The Solution step (This handles the solution for the 1 or 2 element array rather then the 500 elements)
+
+Once the function arrives at the Solution step, the array has already been broken down to its smallest possible version. It then solves the smallest problem and works its way up solving and handling the rest of the array.
+
 # Resources 
 - Thinking Like a Programmer: An Introduction to Creative Problem Solving [(Chapter 6)][1]
 - Recursion (Think Like a Programmer) [(Youtube)][2]
