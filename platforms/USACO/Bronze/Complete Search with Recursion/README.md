@@ -2,8 +2,8 @@
 
 # Resources 
 - Thinking Like a Programmer: An Introduction to Creative Problem Solving [(Chapter 6)][1]
-- Recursion (Think Like a Programmer) [[Youtube]][2]
-- Backtracking (Think Like a Programmer) [[Youtube]][3]
+- Recursion (Think Like a Programmer) [(Youtube)][2]
+- Backtracking (Think Like a Programmer) [(Youtube)][3]
 
 
 
