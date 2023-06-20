@@ -1,7 +1,7 @@
 
 
 # Resources 
-- [Thinking Like a Programmer: An Introduction to Creative Problem Solving (Chapter 6)][1]: 
+- [Thinking Like a Programmer: An Introduction to Creative Problem Solving (Chapter 6)][1]
 
 
 
