@@ -46,7 +46,7 @@ void solve()
         9 6
         10 8
 
-        This condition was mistakenly assumed to be true on June 20th, 2023.
+        This condition was mistakenly assumed to be true on June 20th, 23.
         */
 
         if (exams_dates[i].second >= taking_exams_dates[i - 1])
