@@ -121,8 +121,8 @@ void solve()
         std::cin >> cow2;
         restrictions.push_back({cow1, cow2});
     }
-
-	std::vector<std::string> cows {"Bessie", "Buttercup", "Belinda", "Beatrice", "Bella",  "Blue", "Betsy", "Sue"};
+    
+    std::vector<std::string> cows {"Bessie", "Buttercup", "Belinda", "Beatrice", "Bella",  "Blue", "Betsy", "Sue"};
     std::sort(all(cows));
 
     while (std::next_permutation(all(cows)))
