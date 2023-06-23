@@ -23,7 +23,7 @@ void setIO(std::string name = "")
     }
 }
 
-// Here, we use an unordered_set instead of a set because we don't require the elements to be stored in sorted order.
+// Here, we use an unordered_set instead of a set because we just need the size of all different elements in the list.
 std::unordered_set<int> readings; 
 const int BUCKETS = 10;
 
