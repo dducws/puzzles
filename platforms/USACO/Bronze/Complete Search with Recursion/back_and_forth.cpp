@@ -31,9 +31,12 @@ const int BUCKETS = 10;
     On 23 Jun, 2023, I couldn't write this recursive function properly. 
     I declared two variables, id_first and id_second, to keep track of the current indices used in the two vectors. However, both variables are redundant. 
     A better approach is to use a single variable, "day," in the function to keep track of the status of all trips.
-    Additionally, I forgot to include the necessary steps to restore the barns to their previous states by using pop_back and reinsert operations. 
+    Additionally, I forgot to include the necessary steps to restore the barns to their previous states by using pop_back and insert operations. 
     This caused the barns to accumulate extra buckets, leading to incorrect results.
-    The corrected implementation is provided below, which addresses these issues and produces the desired outcome.
+    Furthermore, I used another vector, "temp," to store all the milk that is transferred from barn1 to barn2 in four trips. 
+    However, this approach is unnecessary. Instead, we can simply use an int variable named "milk" to keep track of the current milk in the first barn.  
+    This modification also saves memory usage.
+    Finally, the corrected implementation is provided below, which addresses these issues and produces the desired outcome.
 */
 
 // Upon reflecting on this implementation, I find the recursive function to be truly beautiful in its design and execution.
