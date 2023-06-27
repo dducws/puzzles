@@ -83,6 +83,7 @@ int main()
 {
     /* The reason for initializing maxScore = -1 is because in a niche test case when n = 1 and num = 1,
     the correct output has to be 0. Initializing maxScore = 0 leads to the output will be 1 which is incorrect. */
+    // The purpose of using maxScore variable is to keep track the maximum additional 1s that can be obtained by flipping a subarray. 
     int n, maxScore {-1}, currentScore {}, count_ones {};
     std::cin >> n;
     
