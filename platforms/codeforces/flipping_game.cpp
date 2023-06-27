@@ -69,11 +69,11 @@ int main()
 */
 
 
-// Efficient implementation using greedy algorithm
+// A much more efficient implementation using greedy algorithm
 /* 
-The greedy approach in this implementation works by iteratively updating the maxScore based on the current element's contribution to the score.
-It keeps track of the count of ones encountered (count_ones) and maintains the highest score encountered so far (maxScore). 
-By resetting the currentScore to 0 when it becomes negative, the algorithm greedily selects the subarray starting from the current position that maximizes the score. 
+The approach works because it greedily selects the subarray that maximizes the score (number of 1s) after performing the flip operation.
+By iteratively updating the maxScore based on the current element's contribution to the score,
+the algorithm identifies the optimal subarray to flip in order to maximize the number of 1s.
 */
 
 #include <iostream>
@@ -81,6 +81,8 @@ By resetting the currentScore to 0 when it becomes negative, the algorithm greed
 
 int main()
 {
+    /* The reason for initializing maxScore = -1 is because in a niche test case when n = 1 and num = 1,
+    the correct output has to be 0. Initializing maxScore = 0 leads to the output will be 1 which is incorrect. */
     int n, maxScore {-1}, currentScore {}, count_ones {};
     std::cin >> n;
     
@@ -89,10 +91,13 @@ int main()
         int num;
         std::cin >> num;
         count_ones += num;
+        // The expression '1 - 2 * num' represents the net change in the score resulting from flipping the current element.
         currentScore += 1 - 2 * num;
         maxScore = std::max(maxScore, currentScore);
-        /* By setting currentScore to 0 if it is negative,
-        we effectively "reset" the score to start counting from the current position. */
+        /* If the currentScore becomes negative, it means that the cumulative score has become negative, 
+        indicating that the previous flips have resulted in more 0s than 1s. 
+        In this case, it is more beneficial to start counting the score from the current position (resetting it to 0)
+        rather than including the negative score in the calculation. */
         currentScore = std::max(0, currentScore);
     }
     
