@@ -33,7 +33,6 @@ However, this assumption is incorrect because the graph is not cyclic. To demons
 5 1
 */
 
-
 void solve()
 {
     int N;
