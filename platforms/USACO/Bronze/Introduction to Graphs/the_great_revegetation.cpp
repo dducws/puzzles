@@ -67,8 +67,10 @@ void solve()
     {
         if (grassTypes[i])
             std::cout << grassTypes[i];
+        /* I also made a mistake here when I forgot to assign grass types to unassigned pastures.
+        With this line, any pasture without an assigned grass type will be assigned the smallest type (1).*/
         else 
-            std::cout << 1;     // If a pasture has no assigned grass type, assign the smallest type (1)
+            std::cout << 1;     
     }
 }
 
