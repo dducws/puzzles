@@ -1,3 +1,9 @@
+/* USACO 2019 US Open Contest, Bronze
+Problem 2. Milk Factory */
+// Problem: http://www.usaco.org/index.php?page=viewproblem2&cpid=940
+// Edited: chatGPT
+
+
 #include <iostream> 
 #include <vector>
 
