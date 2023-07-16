@@ -9,7 +9,6 @@ However, I find it challenging to grasp the intricacies of this approach at the 
 // Official analysis: http://www.usaco.org/current/data/sol_evolution_bronze_open19.html
 
 
-
 #include <iostream> 
 #include <vector>
 #include <algorithm>
@@ -28,6 +27,7 @@ void setIO(std::string name = "")
         freopen((name + ".out").c_str(), "w", stdout);
     }
 }
+
 
 /* On 16 July 2023, initially, I attempted to solve this problem by using nested loops to compare the characteristics of sub-populations. 
 My assumption was that if two sub-populations have the same number of characteristics, I could determine their relationship based on the number of different characteristics between them.
