@@ -4,6 +4,11 @@ Problem 3. Cow Evolution */
 // Explanation: https://www.youtube.com/watch?v=4YTijr0BbrA
 // Edited: chatGPT
 
+/* In the official analysis, the author suggests mentions another approach, which is highly applicable in real-world scenarios to solve problems in biology. 
+However, I find it challenging to grasp the intricacies of this approach at the moment. I intend to revisit this problem in the future and attempt to solve it using that approach. */
+// Official analysis: http://www.usaco.org/current/data/sol_evolution_bronze_open19.html
+
+
 
 #include <iostream> 
 #include <vector>
