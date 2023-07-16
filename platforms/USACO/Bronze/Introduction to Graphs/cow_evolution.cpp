@@ -47,6 +47,7 @@ This is because if we have a cow that has characteristic A but not characteristi
 this suggests that these two characteristics are on separate branches. If either cow descended from the other one, it would have to possess both characteristic A and characteristic B. 
 Therefore, finding a cow with both characteristics implies that it randomly developed either characteristic A or characteristic B, which invalidates the tree structure. */
 
+
 int N;
 std::vector<std::vector<std::string>> sub_populations;
 std::vector<std::string> differentCharacteristics; 
