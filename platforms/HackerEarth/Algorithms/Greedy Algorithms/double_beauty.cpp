@@ -27,9 +27,7 @@ void solve()
         /* On 17 July 2023, I made a mistake due to not carefully reading the problem requirements. 
         It was stated that the output should be the maximum beauty over all permutations. 
         After receiving advice from my brother to revisit the problem details, I instantly realized my error. 
-        If the output requires the calculation of the maximum beauty among all PERMUTATIONS, it is necessary to sort the list first. 
-        This realization taught me the importance of spending more time reading the problem statement attentively to 
-        avoid any misinterpretations in the future. */
+        If the output requires the calculation of the maximum beauty among all PERMUTATIONS, it is necessary to sort the list first.  */
         std::sort(all(A));
         int max_beauty_all_permutations {};
 
