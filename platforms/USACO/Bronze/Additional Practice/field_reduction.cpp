@@ -22,7 +22,7 @@ void setIO(std::string name = "")
     }
 }
 
-int MAX_RANGE = 40001;
+const int MAX_COORDINATE = 40001;
 
 void insertCows(std::set<std::pair<int, int>>& shortlist, std::multimap<int, int>& data, int k, bool reverse)
 {
@@ -45,17 +45,17 @@ void insertCows(std::set<std::pair<int, int>>& shortlist, std::multimap<int, int
     }
 }
 
-int computeEnclosingRectangleArea(const std::vector<std::pair<int, int>>& sell_out_cows, int i, int j, int k)
+int computeEnclosingRectangleArea(const std::vector<std::pair<int, int>>& selected_cows, int i, int j, int k)
 {
-    int xMin = MAX_RANGE, xMax = 0, yMin = MAX_RANGE, yMax = 0;                
-    for (int a = 0; a < sz(sell_out_cows); ++a)
+    int xMin = MAX_COORDINATE, xMax = 0, yMin = MAX_COORDINATE, yMax = 0;                
+    for (int a = 0; a < sz(selected_cows); ++a)
     {
         if (a != i && a != j && a != k)
         {
-            xMin = std::min(xMin, sell_out_cows[a].first);
-            xMax = std::max(xMax, sell_out_cows[a].first);
-            yMin = std::min(yMin, sell_out_cows[a].second);
-            yMax = std::max(yMax, sell_out_cows[a].second);
+            xMin = std::min(xMin, selected_cows[a].first);
+            xMax = std::max(xMax, selected_cows[a].first);
+            yMin = std::min(yMin, selected_cows[a].second);
+            yMax = std::max(yMax, selected_cows[a].second);
         }
     }
     return (xMax - xMin) * (yMax - yMin);
@@ -77,33 +77,33 @@ void solve()
 {
     int N;
     std::cin >> N;
-    std::vector<std::pair<int, int>> A(N);
+    std::vector<std::pair<int, int>> cow_positions(N);
     /* Here, the use of multimap is crucial because it allows multiple key-value pairs to have the same value,
     whereas using a regular map would update the value of an existing key if encountered again, leading to incorrect results. */
     std::multimap<int, int> x_y, y_x;
 
-    for (int i {}; i < N; ++i)
+    for (int i = 0; i < N; ++i)
     {
-        std::cin >> A[i].first >> A[i].second;
-        x_y.emplace(A[i].first, A[i].second);
-        y_x.emplace(A[i].second, A[i].first);
+        std::cin >> cow_positions[i].first >> cow_positions[i].second;
+        x_y.emplace(cow_positions[i]);
+        y_x.emplace(cow_positions[i].second, cow_positions[i].first);
     }
 
     std::set<std::pair<int, int>> shortlist; 
     insertCows(shortlist, x_y, 4, false);
     insertCows(shortlist, y_x, 4, true);
 
-    int minArea {MAX_RANGE * MAX_RANGE};
-    std::vector<std::pair<int, int>> sell_out_cows(all(shortlist));
-    int max_cows {sz(sell_out_cows)};
+    int minArea = MAX_COORDINATE * MAX_COORDINATE;
+    std::vector<std::pair<int, int>> selected_cows(all(shortlist));
+    int max_cows = sz(selected_cows);
     
-    for (int i {}; i < max_cows; ++i)
+    for (int i = 0; i < max_cows; ++i)
     {
-        for (int j {i + 1}; j < max_cows; ++j)
+        for (int j = i + 1; j < max_cows; ++j)
         {
-            for (int k {j + 1}; k < max_cows; ++k)
+            for (int k = j + 1; k < max_cows; ++k)
             {
-                minArea = std::min(minArea, computeEnclosingRectangleArea(sell_out_cows, i, j, k));
+                minArea = std::min(minArea, computeEnclosingRectangleArea(selected_cows, i, j, k));
             }
         }
     }
