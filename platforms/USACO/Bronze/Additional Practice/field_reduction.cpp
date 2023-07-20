@@ -85,6 +85,9 @@ void solve()
     for (int i = 0; i < N; ++i)
     {
         std::cin >> cow_positions[i].first >> cow_positions[i].second;
+        /* The reason for using a multimap is to exploit its sorting trait, 
+        which allows us to easily select the 4 smallest x-coordinates and 4 biggest x-coordinates,
+        as well as the 4 smallest y-coordinates and 4 biggest y-coordinates. */
         x_y.emplace(cow_positions[i]);
         y_x.emplace(cow_positions[i].second, cow_positions[i].first);
     }
