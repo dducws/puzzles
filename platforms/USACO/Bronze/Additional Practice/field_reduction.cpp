@@ -82,7 +82,6 @@ void solve()
     whereas using a regular map would update the value of an existing key if encountered again, leading to incorrect results. */
     std::multimap<int, int> x_y, y_x;
 
-
     for (int i {}; i < N; ++i)
     {
         std::cin >> A[i].first >> A[i].second;
@@ -108,6 +107,7 @@ void solve()
             }
         }
     }
+    
     std::cout << minArea << '\n';
 }
 
