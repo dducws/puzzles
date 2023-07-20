@@ -90,6 +90,11 @@ void solve()
     }
 
     std::set<std::pair<int, int>> shortlist; 
+    /* The reason for selecting 4 cows for each corner of the largest rectangle is to avoid a situation 
+    where all 3 selected cows are removed from the same corner (e.g., left, right, bottom, or top). 
+    If we choose only 3 cows, it becomes challenging to find the smallest area of the enclosing rectangle without
+    knowing the values of all four crucial variables: minX, minY, maxX, and maxY. By selecting 4 cows, 
+    we ensure that we have enough information to accurately determine the smallest area of the enclosing rectangle for the remaining cows. */
     insertCows(shortlist, x_y, 4, false);
     insertCows(shortlist, y_x, 4, true);
 
