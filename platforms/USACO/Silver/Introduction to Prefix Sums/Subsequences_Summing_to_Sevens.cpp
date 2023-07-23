@@ -29,9 +29,7 @@ void solve()
     int N, largest_group {};
     std::cin >> N; 
     /* I realized that there's no need to use a vector to store the prefix sum of IDs of all cows.
-    Instead, we can achieve the same result using just two variables: `sumIDs` and `id`.
-    `sumIDs` keeps track of the cumulative sum of cow IDs up to the current cow, 
-    and `id` stores the ID of the current cow being processed. */
+    Instead, we can achieve the same result using just two variables: `sumIDs` and `id`. */
     ll sumIDs {};
     /* Instead of using a 2D array or a 1D array with std::pair<int, int> to store the first and 
     last element of every prefix sum modules 7, we only need a 1D array with type "int" to keep track of the first indices for each modulo value.
