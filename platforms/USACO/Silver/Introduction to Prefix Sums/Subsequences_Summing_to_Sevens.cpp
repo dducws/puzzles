@@ -21,14 +21,22 @@ void setIO(std::string name = "")
     }
 }
 
+/* A cleaner and more efficient solution which is written based on the solution from USACO.*/
 const int MOD {7};
 
-/* This is a cleaner and more efficient solution than mine. I rewrote it based on the solution from USACO.*/
 void solve()
 {
     int N, largest_group {};
     std::cin >> N; 
+    /* I realized that there's no need to use a vector to store the prefix sum of IDs of all cows.
+    Instead, we can achieve the same result using just two variables: `sumIDs` and `id`.
+    `sumIDs` keeps track of the cumulative sum of cow IDs up to the current cow, 
+    and `id` stores the ID of the current cow being processed.
+    This simplifies the code and avoids unnecessary memory usage. */
     ll sumIDs {};
+    /* Instead of using a 2D array or a 1D array with std::pair<int, int> to store the first and 
+    last element of every prefix sum modules 7, we only need a 1D array with type "int" to keep track of the first indices for each modulo value.
+    If we encounter the same modulo value again, we compare the current cow's position `i` with the first index to find the largest_group. */
     std::vector<int> mods (7);
 
     for (int i {1}; i <= N; ++i)
