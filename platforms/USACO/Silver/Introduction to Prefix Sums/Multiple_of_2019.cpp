@@ -12,11 +12,10 @@ using ll = long long;
 
 const int MOD = 2019;
 
-/* In this problem, we apply the "prefix sum" technique but instead of exploiting the 
-value of sum of digits, we utilize the value represented by the prefixes so we can keep
-track the mod of a subarray of avery big number without directly storing it. 
-Besides that, it is necessary to apply the formula (a + b) % m = (a % m + b % m) % m
-to keep track of the remainder after each suffix and the power_of_10. */
+/* There is a way to solve this problem by using the "prefix sum" technique but instead of exploiting the value of sum of digits,
+we utilize the value represented by the prefixes so we can keep track the mod of a subarray of a very big number without directly
+storing it. Besides that, it is necessary to apply the formula (a + b) % m = (a % m + b % m) % m to keep track of the remainder
+after each suffix and the power_of_10. */
 void solve()
 {
     std::string S;
