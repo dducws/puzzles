@@ -45,7 +45,6 @@ void findPrimeFactors(int n)
         else
             primeFactors[factor.first].first = std::min(primeFactors[factor.first].first, factor.second.first);
         ++primeFactors[factor.first].second;
-
     }
 }
 
