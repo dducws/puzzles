@@ -12,11 +12,11 @@ using ll = long long;
 
 /* (On 31 July 2023) Important observation: 
 1) A connected component is a group of blue cells that are adjacent to each other either horizontally or vertically, but not diagonally.
-1) The total number of blue cells in each submatrix tells us how many cells are part of any connected component in that submatrix.
+2) The total number of blue cells in each submatrix tells us how many cells are part of any connected component in that submatrix.
 For example, if we have a submatrix with four blue cells, then we know that there are at most four connected components in that submatrix.
-2) The number of connected components in each column of each submatrix tells us how many connections between adjacent blue cells are there in that column.
+3) The number of connected components in each column of each submatrix tells us how many connections between adjacent blue cells are there in that column.
 For example, if we have a column with three blue cells and two connections between them, then we know that there is only one connected component in that column.
-3) The number of connected components in each row of each submatrix tells us how many connections between adjacent blue cells are there in that row. 
+4) The number of connected components in each row of each submatrix tells us how many connections between adjacent blue cells are there in that row. 
 For example, if we have a row with three blue cells and one connection between them, then we know that there are two connected components in that row.
 
 By calculating these three kinds of prefix sums, we can use a simple formula to find the number of connected components in any submatrix:
