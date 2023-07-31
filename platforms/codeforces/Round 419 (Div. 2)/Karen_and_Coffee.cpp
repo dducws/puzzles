@@ -23,7 +23,7 @@ void solve()
         --count[r + 1];
     }
 
-    /* Instead of accumulating the prefix sums in a separate loop, we can use a variable to keep track of the current prefix sum
+    /* (On 31 July 2023) Instead of accumulating the prefix sums in a separate loop, we can use a variable to keep track of the current prefix sum
     and update it on the fly while processing each recipe. This way, we avoid the need for a separate loop and reduce the running time almost by half. */
     int currentSum {};
     for (int i {1}; i <= MAX; ++i)
