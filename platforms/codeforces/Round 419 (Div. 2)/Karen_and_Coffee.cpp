@@ -23,18 +23,10 @@ void solve()
         --count[r + 1];
     }
 
-<<<<<<< HEAD
-
-        /* (On 31 July 2023) Optimization: Instead of accumulating the prefix sums in a separate loop, 
+    /* (On 31 July 2023) Optimization: Instead of accumulating the prefix sums in a separate loop, 
     we can use a variable to keep track of the current prefix sum and update it on the fly 
     while processing each recipe. This way, we avoid the need for a separate loop and 
     significantly reduce the running time almost by half (from 264ms to 140ms). */
-=======
-    /* (On 31 July 2023) Optimization: Instead of accumulating the prefix sums in a separate loop, 
-   we can use a variable to keep track of the current prefix sum and update it on the fly 
-   while processing each recipe. This way, we avoid the need for a separate loop and 
-   significantly reduce the running time almost by half (from 264ms to 140ms). */
->>>>>>> 9725f0310539912927f229906baf15bd731d0230
     int currentSum {};
     for (int i {1}; i <= MAX; ++i)
     {
