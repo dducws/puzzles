@@ -21,8 +21,8 @@ int binarySearch(const std::vector<int>& prices, int m)
             if (mid < sz(prices) - 1 && prices[mid + 1] == m)
             {
                 /* (On 1 August 2023) In some cases, there might be multiple duplicates with the same price m. To get the correct count of shops,
-                we need to find the rightmost index where prices[r] == m instead of the leftmost index, so it would be much more 
-                efficient if we loop from the right through the left. */ 
+                we need to find the rightmost index where prices[r] == m instead of the leftmost index. Looping from the right to the left is
+                more efficient when there are many duplicates. */ 
                 while (prices[r] > m)
                 {
                     --r;
