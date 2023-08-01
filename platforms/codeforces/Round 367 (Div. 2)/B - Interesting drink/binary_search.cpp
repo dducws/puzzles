@@ -42,7 +42,6 @@ int binarySearch(const std::vector<int>& prices, int m)
     return r + 1;
 }
 
-
 void solve()
 {
     int n, q, m;
