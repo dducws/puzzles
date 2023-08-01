@@ -28,7 +28,6 @@ void solve()
         int shops = std::upper_bound(all(x), m) - x.begin();
         std::cout << shops << '\n';
     }
-
 }
 
 int main()
