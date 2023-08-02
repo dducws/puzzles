@@ -23,7 +23,7 @@ void solve()
         std::cout << ">\n";
     else 
     {
-        bool comparison = a.compare(b);
+        int comparison = a.compare(b);
         if (comparison > 0)
             std::cout << ">\n";
         else if (comparison < 0)
