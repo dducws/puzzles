@@ -30,7 +30,7 @@ std::vector<std::vector<int>> canvas;
 
 struct Dimension
 {
-    int top {N}, bottom {0}, left {N}, right {};
+    int top {N}, bottom {}, left {N}, right {};
 
     // Calculate the bounding box for the given color 
     void measurement(int color)
