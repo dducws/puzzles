@@ -59,16 +59,16 @@ void solve()
         for (int j {}; j < N; ++j)
         {
             std::cin >> canvas[i][j];
-            int color = canvas[i][j];
             
             // If a color is painted, it will be added to check whether it can be first.
-            if (color)                
-                importantColors.insert(color);
+            if (canvas[i][j])                
+                importantColors.insert(canvas[i][j]);
 
-            colors[color].top = std::min(colors[color].top, i);
-            colors[color].bottom = std::max(colors[color].bottom, i);
-            colors[color].left = std::min(colors[color].left, j);
-            colors[color].right = std::max(colors[color].right, j);
+            Dimension& color = colors[canvas[i][j]];
+            color.top = std::min(color.top, i);
+            color.bottom = std::max(color.bottom, i);
+            color.left = std::min(color.left, j);
+            color.right = std::max(color.right, j);
         }
     }
 
