@@ -55,9 +55,8 @@ void solve()
                     prefixSums[i][j] += prefixSums[i][j - 1];
             }
             else
-            { 
                 prefixSums[i][j] += prefixSums[i - 1][j] + prefixSums[i][j - 1] - prefixSums[i - 1][j - 1];
-            }
+            
             /* I initially used an std::unordered_map to keep track of the values of
             all prefixSums, but it was very inefficient and unnecessary for this problem. 
             Since I only need to find the number of values of prefixSums that
