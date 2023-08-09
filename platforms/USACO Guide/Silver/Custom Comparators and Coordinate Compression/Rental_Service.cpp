@@ -26,7 +26,7 @@ This was due to my reliance on the prefix sums technique for managing two arrays
 conditions to keep track of the indexes of both of them.
 
 Also through this problem, I realize that my preconceived notion that prefix sum techniques solely apply to arrays
-is inaccurate. We can use a variable with a large value, such as with 'long long' data type to store the cummulative sum.
+is inaccurate. We can use a variable with a large value, such as with 'long long' data type to store the cumulative sum.
 
 It's also worth noting that in this implementation, we eliminate the need for a custom comparator.
 By simply inverting the input values from the stores, we can still can sort the list by selling prices. */
@@ -88,7 +88,7 @@ void solve()
         else 
         {
             maxProfit += rents[rent_at];
-            /* This drecement helps optimize profit by simulating renting the cows with the least milk production
+            /* This decrement helps optimize profit by simulating renting the cows with the least milk production
             (at the beginning of the list). */
             --n;
             ++rent_at;
