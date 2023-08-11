@@ -34,7 +34,6 @@ void solve()
         std::cin >> shifts[i].first >> shifts[i].second;
     }
     
-    // Add another dummy shift to simplify calculations at the end
     shifts[numLifeguards + 1] = {INFINITY_VALUE, INFINITY_VALUE};
     std::sort(all(shifts));  
 
