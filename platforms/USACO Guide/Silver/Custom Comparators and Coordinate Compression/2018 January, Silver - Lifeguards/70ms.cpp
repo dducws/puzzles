@@ -51,8 +51,7 @@ void solve()
         minTimeLoss = std::min(minTimeLoss, currentMinLoss);
     }
     
-    // Output the maximum time that can still be covered by the shifts
-    std::cout << totalCoverage - minTimeLoss << "\n";
+    std::cout << totalCoverage - minTimeLoss;
 }
 
 int main() 
