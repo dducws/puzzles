@@ -20,7 +20,6 @@ void setIO(std::string name = "")
     }
 }
 
-
 bool sortByYCoordinate(const std::pair<int, int>& A, const std::pair<int, int>& B)
 {
     if (A.second != B.second)
