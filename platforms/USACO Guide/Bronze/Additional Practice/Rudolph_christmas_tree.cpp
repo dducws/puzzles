@@ -1,6 +1,5 @@
 // Codeforces Round 883 (Div. 3)
 // Problem: https://codeforces.com/contest/1846/problem/D
-// Edited: chatGPT
 
 
 #include <iostream>

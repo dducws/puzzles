@@ -1,5 +1,3 @@
-/* USACO 2018 January Contest, Bronze
-Problem 3. Out of Place */
 // Problem: http://www.usaco.org/index.php?page=viewproblem2&cpid=785
 // Solution: https://www.youtube.com/watch?v=FaoAL7Prc6o&t=401s
 

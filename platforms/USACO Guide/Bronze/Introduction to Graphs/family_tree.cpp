@@ -1,7 +1,4 @@
-/* USACO 2018 US Open Contest, Bronze
-Problem 3. Family Tree */
 // Problem: http://www.usaco.org/index.php?page=viewproblem2&cpid=833
-// Edited: chatGPT
 
 
 #include <iostream> 

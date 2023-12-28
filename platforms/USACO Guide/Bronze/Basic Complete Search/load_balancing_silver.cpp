@@ -1,14 +1,9 @@
-/* USACO 2016 February Contest, Silver
-Problem 2. Load Balancing */
 // Problem: http://www.usaco.org/index.php?page=viewproblem2&cpid=619
 // Solution: https://usaco.guide/problems/usaco-619-load-balancing/solution
-// Edited by: chatGPT
 
-/* 
-The key point (main difference) between this problem and the one in the Bronze contest is that the input size is 10 times larger.
+/* The key point (main difference) between this problem and the one in the Bronze contest is that the input size is 10 times larger.
 To optimize for better time complexity, we can reduce the constant factors by removing duplicate coordinates and considering
-only the most likely ranges of possible x and y values, which are [N/4, 3N/4].
-*/
+only the most likely ranges of possible x and y values, which are [N/4, 3N/4]. */
 
 
 #include <iostream>

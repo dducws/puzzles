@@ -1,4 +1,3 @@
-// Codeforces Round 861 (Div. 2) 
 // Problem: https://codeforces.com/contest/1808/problem/B
 // Solution: https://usaco.guide/problems/cf-playing-in-a-casino/solution
 

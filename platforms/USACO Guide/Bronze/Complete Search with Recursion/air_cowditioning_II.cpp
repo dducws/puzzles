@@ -1,9 +1,5 @@
-/* USACO 2023 January Contest, Bronze
-Problem 2. Air Cownditioning II */
 // Problem: http://www.usaco.org/index.php?page=viewproblem2&cpid=1276
-// Edited: chatGPT
 
-// On 21st June 2023
 
 #include <iostream>
 #include <vector>
@@ -30,12 +26,13 @@ std::ostream& operator<<(std::ostream& out, const std::vector<T>& vec) {
 }
 
 /* 
-   This function was the most challenging aspect of the problem. 
-   I really struggled to generate all subsets of conditioners with lengths ranging from 1 to M - 1.
-   I also made a mistake by assuming that the functions chosen and combination operate the same way, and that I only need one of them.
-   However, in reality, these two vectors serve different purposes:
-   - The first vector, "chosen," represents the status of all conditioners as either chosen or not chosen.
-   - The second vector, "combination," stores the indices of the conditioners that have been chosen.
+On 21st June 2023
+This function was the most challenging aspect of the problem. 
+I really struggled to generate all subsets of conditioners with lengths ranging from 1 to M - 1.
+I also made a mistake by assuming that the functions chosen and combination operate the same way, and that I only need one of them.
+However, in reality, these two vectors serve different purposes:
+- The first vector, "chosen," represents the status of all conditioners as either chosen or not chosen.
+- The second vector, "combination," stores the indices of the conditioners that have been chosen.
 */
 std::vector<std::vector<int>> generateCombinations(const std::vector<std::vector<int>>& conditioners, int quantity)
 {

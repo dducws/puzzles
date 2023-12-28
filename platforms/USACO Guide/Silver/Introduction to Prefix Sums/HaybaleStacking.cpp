@@ -1,5 +1,3 @@
-/* USACO 2012 January Contest, Bronze Division
-Problem 2. Haybale Stacking */
 // Problem: https://www.spoj.com/problems/HAYBALE/
 
 

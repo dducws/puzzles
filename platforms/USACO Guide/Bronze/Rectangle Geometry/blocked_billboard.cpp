@@ -1,7 +1,4 @@
-/* USACO 2017 December Contest, Bronze
-Problem 1. Blocked Billboard */
 // Problem: http://www.usaco.org/index.php?page=viewproblem2&cpid=759
-// Edited by: chatGPT
 
 
 #include <iostream> 

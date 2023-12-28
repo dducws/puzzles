@@ -1,7 +1,5 @@
-// Apple Division - CSES Problem Set 
 // Problem: https://cses.fi/problemset/task/1623
 // Solution: https://usaco.guide/bronze/complete-rec?lang=cpp#problems
-// Edited: chatGPT
 
 
 #include <iostream> 

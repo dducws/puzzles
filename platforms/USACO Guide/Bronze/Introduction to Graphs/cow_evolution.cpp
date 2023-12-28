@@ -1,8 +1,5 @@
-/* USACO 2019 US Open Contest, Bronze
-Problem 3. Cow Evolution */
 // Problem: http://www.usaco.org/index.php?page=viewproblem2&cpid=941
 // Explanation: https://www.youtube.com/watch?v=4YTijr0BbrA
-// Edited: chatGPT
 
 /* In the official analysis, the author suggests mentions another approach, which is highly applicable in real-world scenarios to solve problems in biology. 
 However, I find it challenging to grasp the intricacies of this approach at the moment. 

@@ -1,7 +1,4 @@
-/* USACO 2016 February Contest, Bronze
-Problem 3. Load Balancing */
 // Problem: http://www.usaco.org/index.php?page=viewproblem2&cpid=617
-// Edited by: chatGPT
 
 
 #include <iostream>

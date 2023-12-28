@@ -1,6 +1,4 @@
-// Codeforces Round 876 (Div. 2)
 // Problem: https://codeforces.com/contest/1839/problem/B
-// Edited: chatGPT
 
 
 #include <iostream> 

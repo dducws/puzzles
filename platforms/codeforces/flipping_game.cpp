@@ -1,6 +1,5 @@
-// Codeforces Round 191 (Div. 2)
 // Problem: https://codeforces.com/contest/327/problem/A
-// Edited: chatGPT
+
 
 // My brute force implementation
 /* 

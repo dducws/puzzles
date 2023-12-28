@@ -1,7 +1,4 @@
-/* USACO 2021 February Contest, Bronze
-Problem 1. Year of the Cow */
 // Problem: http://www.usaco.org/index.php?page=viewproblem2&cpid=1107
-// Edited: chatGPT
 
 
 #include <iostream> 

@@ -1,8 +1,5 @@
-/* USACO 2018 February Contest, Bronze 
-Problem 3. Taming the Herd */
 // Problem: http://www.usaco.org/index.php?page=viewproblem2&cpid=809
 // Solution: https://www.youtube.com/watch?v=f_Otluj98kM
-// Edited: chatGPT
 
 /* 
 Check to make sure the first log entry is either -1 or 1. If not, output -1. 

@@ -1,5 +1,3 @@
-/* USACO 2022 February Contest, Bronze
-Problem 1. Sleeping in Class */
 // Problem: http://usaco.org/index.php?page=viewproblem2&cpid=1203
 // Solution: http://usaco.org/current/data/sol_prob1_bronze_feb22.html
 

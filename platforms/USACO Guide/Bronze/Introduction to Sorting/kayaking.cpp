@@ -1,4 +1,3 @@
-// Educational Codeforces Round 29 
 // Problem: https://codeforces.com/contest/863/problem/B
 // Reference: https://codeforces.com/contest/863/submission/157430652
 

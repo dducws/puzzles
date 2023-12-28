@@ -1,8 +1,5 @@
-/* USACO 2017 US Open Contest, Bronze
-Problem 3. Modern Art */
 // Problem: http://www.usaco.org/index.php?page=viewproblem2&cpid=737
 // Solution: http://www.usaco.org/current/data/sol_art_bronze_open17.html
-// Edited: chatGPT
 
 
 #include <iostream> 

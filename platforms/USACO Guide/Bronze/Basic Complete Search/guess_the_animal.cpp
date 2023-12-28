@@ -1,5 +1,3 @@
-/* USACO 2019 January Contest, Bronze
-Problem 3. Guess the Animal */
 // Problem: http://www.usaco.org/index.php?page=viewproblem2&cpid=893
 // Solution: https://www.youtube.com/watch?v=qmltNgaSg8w
 

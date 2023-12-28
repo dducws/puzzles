@@ -1,7 +1,4 @@
-/* USACO 2018 December Contest, Bronze
-Problem 3. Back and Forth */
 // Problem: http://www.usaco.org/index.php?page=viewproblem2&cpid=857
-// Edited + Solution: chatGPT
 
 
 #include <iostream> 

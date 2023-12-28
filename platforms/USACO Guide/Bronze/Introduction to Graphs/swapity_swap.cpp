@@ -1,7 +1,4 @@
-/* USACO 2020 February Contest, Bronze
-Problem 3. Swapity Swap */
 // Problem: http://www.usaco.org/index.php?page=viewproblem2&cpid=1013
-// Edited: chatGPT
 
 
 #include <iostream> 

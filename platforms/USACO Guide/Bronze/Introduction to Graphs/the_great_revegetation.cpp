@@ -1,8 +1,5 @@
-/* USACO 2019 February Contest, Bronze
-Problem 2. The Great Revegetation */
 // Problem: http://www.usaco.org/index.php?page=viewproblem2&cpid=916
 // Explanation: https://youtu.be/GT9PEJbJjxo
-// Edited: chatGPT
 
 
 #include <iostream> 

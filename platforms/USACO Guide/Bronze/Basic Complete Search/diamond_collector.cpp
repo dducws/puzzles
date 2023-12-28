@@ -1,7 +1,4 @@
-/* USACO 2016 US Open Contest, Bronze
-Problem 1. Diamond Collector */
 // Problem: http://www.usaco.org/index.php?page=viewproblem2&cpid=639
-// Edited by: chatGPT
 
 
 #include <iostream> 

@@ -1,4 +1,3 @@
-// Codeforces Round 274 (Div. 2)
 // Problem: https://codeforces.com/contest/479/problem/C
 
 

@@ -1,7 +1,4 @@
-/* USACO 2017 US Open Contest, Bronze
-Problem 2. Bovine Genomics */
 // Problem: http://www.usaco.org/index.php?page=viewproblem2&cpid=736
-// Edited by: chatGPT
 
 
 #include <iostream>

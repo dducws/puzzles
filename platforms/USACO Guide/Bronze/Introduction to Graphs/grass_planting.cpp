@@ -1,5 +1,3 @@
-/* USACO 2019 January Contest, Silver
-Problem 1. Grass Planting */
 // Problem: http://www.usaco.org/index.php?page=viewproblem2&cpid=894
 // Explanation: https://www.youtube.com/watch?v=WygnoGqUluY
 

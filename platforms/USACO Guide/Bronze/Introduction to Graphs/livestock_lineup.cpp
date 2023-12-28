@@ -1,9 +1,6 @@
-/* USACO 2019 December Contest, Bronze
-Problem 3. Livestock Lineup */
 // Problem: http://www.usaco.org/index.php?page=viewproblem2&cpid=965
 // Brute-force approach tutorial: https://www.youtube.com/watch?v=xed_5FjVMoo
 // Graphs approach solution: https://usaco.guide/bronze/intro-graphs?lang=cpp
-// Edited: chatGPT
 
 
 #include <iostream> 
